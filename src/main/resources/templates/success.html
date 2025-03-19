@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Success</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        .success {
+            color: green;
+            font-size: 40px;
+        }
+
+        p {
+            font-size: 18px;
+            color: #333;
+        }
+
+        @media (max-width: 480px) {
+            .success {
+                font-size: 30px;
+            }
+            p {
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+<h1 class="success">✔ SUCCESS</h1>
+<p>To‘lov muvaffaqiyatli amalga oshirildi!</p>
+
+<audio id="successSound" autoplay>
+    <source src="src/main/resources/static/audio/successsound.mp3" type="audio/mpeg">
+</audio>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        let audio = new Audio('src/main/resources/static/audio/successsound.mp3.mp3');
+        audio.play();
+    });
+</script>
+</body>
+</html>
